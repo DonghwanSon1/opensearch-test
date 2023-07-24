@@ -63,6 +63,7 @@ public class RestClientConfig extends AbstractOpenSearchConfiguration {
 
     SSLContext finalSslContext = sslContext;
     RestClientBuilder builder = RestClient.builder(new HttpHost("101.202.40.5", 19200, "https"))
+//    RestClientBuilder builder = RestClient.builder(new HttpHost("10.0.11.61", 9200, "https"))
         .setRequestConfigCallback(requestConfigBuilder -> requestConfigBuilder
             .setConnectTimeout(30000)
             .setSocketTimeout(300000))

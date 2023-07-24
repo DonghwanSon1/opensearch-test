@@ -7,12 +7,10 @@ import org.springframework.data.elasticsearch.annotations.Document;
 import org.springframework.data.elasticsearch.annotations.Field;
 import org.springframework.data.elasticsearch.annotations.FieldType;
 
-import java.util.Date;
-
-@Document(indexName = "sym-metric-vmware-host")
+@Document(indexName = "sym-metric-k8s-pod")
 @Getter
 @Setter
-public class openSearchHostModel {
+public class openSearchPodModel {
     @Id
     private String id;
 
