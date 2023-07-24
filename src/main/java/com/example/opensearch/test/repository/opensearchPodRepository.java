@@ -11,7 +11,7 @@ import java.util.List;
 public interface opensearchPodRepository extends ElasticsearchRepository<openSearchPodModel, String> {
 
 
-  List<openSearchPodModel> findTop10ByObjectIdOrderByCollectTimestampsDesc(String objectId);
-
   List<openSearchPodModel> findTop12ByObjectIdOrderByCollectTimestampsDesc(String objectId);
+
+//  List<openSearchPodModel> findTop12ByObjectIdOrderByCollectTimestampsDesc(String objectId);
 }
