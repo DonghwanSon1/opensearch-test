@@ -23,7 +23,9 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-elasticsearch'
-	implementation "org.opensearch.client:spring-data-opensearch:1.2.0"
+	implementation 'org.springframework.data:spring-data-elasticsearch'
+
+
 	implementation 'org.elasticsearch.client:elasticsearch-rest-high-level-client:7.15.0'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	compileOnly 'org.projectlombok:lombok'
